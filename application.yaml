@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: proj1
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: 'https://github.com/Harshitraiii2005/Jenkins-Demo-Project.git'
+    targetRevision: main
+    path: k8s   # 👈 directory containing deployment.yaml & service.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: proj1
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
