@@ -32,11 +32,13 @@ MANIFEST
 *.manifest
 *.spec
 
+.history/
 
+catboost_info/
 
-jenkins\
+jenkins/
 
-jenkins\
+jenkins/
 
 # Installer logs
 pip-log.txt
