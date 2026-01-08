@@ -34,7 +34,7 @@ pipeline {
                 sh '''
                 set -e
                 . ${VENV_NAME}/bin/activate
-                python proj1/orchestor.py
+                python orchestor.py
                 '''
             }
         }
