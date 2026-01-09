@@ -8,6 +8,10 @@ pipeline {
         IMAGE_NAME      = "proj1-image"
         IMAGE_TAG       = "${BUILD_NUMBER}"
     }
+    docker {
+      image 'python:3.10-slim'
+      args '-u root'
+    }
 
     stages {
 
