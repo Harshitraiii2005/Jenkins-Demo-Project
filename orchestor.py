@@ -1,6 +1,6 @@
 from prefect import flow, task, get_run_logger
 
-from ingestion import load_data
+from proj1.ingestion import load_data
 from preprocessing import preprocess_data
 from training import train_model
 from evaluation import evaluate_model
