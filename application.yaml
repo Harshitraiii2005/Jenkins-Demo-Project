@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/Harshitraiii2005/Jenkins-Demo-Project.git'
     targetRevision: main
-    path: k8s   # 👈 directory containing deployment.yaml & service.yaml
+    path: k8s   
 
   destination:
     server: https://kubernetes.default.svc
